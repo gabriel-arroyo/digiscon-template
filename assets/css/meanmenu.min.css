@@ -229,7 +229,7 @@ a.meanmenu-reveal {
 
 .mean-container .mean-bar::before {
   color: #fff;
-  content: url('../images/digiscon/Logotipos Digiscon/PNG/Wordmark-small.png');
+  content: url('../images/digiscon/Logotipos Digiscon/PNG/Logotipo Principal_small.png');
   background-size: 60px;
   font-size: 22px;
   font-weight: 800;
@@ -240,6 +240,6 @@ a.meanmenu-reveal {
   /*or absolute*/
   z-index: 100000;
   /*a number that's more than the modal box*/
-  top: 10px;
+  top: 0px;
   height: 60px;
 }

@@ -2252,6 +2252,32 @@ a.em-active-button:hover {
     height: 900px;
 }
 
+.welcome-text {
+    width: 60%;
+    text-transform: unset !important;
+}
+
+/* media query at 360 */
+@media (max-width: 580px) {
+    .dark1 {
+        background-image: url(./assets/images/digiscon/identidad.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 435px;
+    }
+
+    .welcome-title {
+        margin-top: 5% !important;
+    }
+
+    .welcome-text {
+        width: 80%;
+        text-transform: unset !important;
+        margin-bottom: 0 !important;
+    }
+}
+
 .dark2 {
     background-image: url(./assets/images/digiscon/header.png);
     background-size: cover;
@@ -12678,7 +12704,7 @@ ul.accordion.upper {
     font-size: 22px;
     height: 40px;
     line-height: 40px;
-    right: 100px;
+    right: 3%;
     text-align: center;
     width: 40px;
     border-radius: 50%;

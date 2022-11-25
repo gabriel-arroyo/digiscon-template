@@ -2276,6 +2276,10 @@ a.em-active-button:hover {
         text-transform: unset !important;
         margin-bottom: 0 !important;
     }
+
+    .meanmenu-reveal {
+        display: none !important;
+    }
 }
 
 .dark2 {

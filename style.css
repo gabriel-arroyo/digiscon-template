@@ -2272,13 +2272,17 @@ a.em-active-button:hover {
     }
 
     .welcome-text {
-        width: 80%;
+        width: 85%;
         text-transform: unset !important;
         margin-bottom: 0 !important;
     }
 
     .meanmenu-reveal {
         display: none !important;
+    }
+
+    .contactus-button {
+        margin-top: 25px;
     }
 }
 

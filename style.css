@@ -212,6 +212,14 @@ a.seo-button:hover {
     }
 }
 
+.dark-title {
+    color: #27337E !important;
+}
+
+.dark-content h5 {
+    color: #303030 !important;
+}
+
 /* techno Menu Css*/
 .techno_menu {
     text-align: right;

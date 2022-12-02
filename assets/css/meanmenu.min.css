@@ -3,7 +3,7 @@ a.meanmenu-reveal {
 }
 
 .mean-container .mean-bar {
-  background: #fff;
+  background: #000;
   float: left;
   min-height: 60px;
   padding: 4px 0 0;
@@ -60,8 +60,8 @@ a.meanmenu-reveal {
 }
 
 .mean-container .mean-nav ul li a {
-  background: #f8f8f8 none repeat scroll 0 0;
-  color: #666666;
+  background: #000 none repeat scroll 0 0;
+  color: #fff;
   display: block;
   float: left;
   font-size: 14px;
@@ -161,7 +161,7 @@ a.meanmenu-reveal {
 }
 
 .mean-container .mean-bar::after {
-  color: #ffffff;
+  color: #000;
   content: "MENU";
   font-size: 21px;
   left: 5%;
@@ -178,7 +178,7 @@ a.meanmenu-reveal {
 }
 
 .mean-container .mean-nav ul li a:hover {
-  color: #fff;
+  color: #27337E;
   border-radius: 0;
 }
 
@@ -191,8 +191,8 @@ a.meanmenu-reveal {
 }
 
 .mean-container .mean-nav ul li a {
-  background: #fff;
-  color: #444;
+  background: #000;
+  color: rgb(234, 234, 234);
   display: block;
 }
 
@@ -228,8 +228,8 @@ a.meanmenu-reveal {
 }
 
 .mean-container .mean-bar::before {
-  color: #fff;
-  content: url('../images/digiscon/Logotipos Digiscon/PNG/Logotipo Principal_small.png');
+  color: #000;
+  /* content: url('../images/digiscon/Logotipos Digiscon/PNG/Logotipo Principal_small.png'); */
   background-size: 60px;
   font-size: 22px;
   font-weight: 800;

@@ -38,7 +38,9 @@ Version: 0.1
 
 =======================*/
 
-
+body {
+    background-color: #000 !important;
+}
 
 
 
@@ -46,12 +48,25 @@ Version: 0.1
  techno	Main Menu Area Css
 ==============================*/
 .techno_nav_manu {
-    background: #fff;
+    background: #000;
     transition: .5s;
     margin-bottom: 0;
     z-index: 999;
     position: relative;
     margin-bottom: 15px;
+}
+
+.sticky-header {
+    background-color: #000;
+}
+
+.techno_nav_manu {
+    border-radius: 10px;
+    border: 2px solid white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .techno_nav_manu.transparent_menu {
@@ -68,7 +83,7 @@ Version: 0.1
     width: 100%;
     -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
-    background: #fff !important;
+    background: #000 !important;
     transition: .5s;
     z-index: 999;
 }
@@ -83,7 +98,7 @@ Version: 0.1
 }
 
 .style-two .techno_menu>ul>li>a {
-    color: #fff;
+    color: #000;
     font-size: 16px;
 }
 
@@ -170,6 +185,33 @@ a.seo-button:hover {
 /* logo Css*/
 .logo {}
 
+.logo-header {
+    height: 270px;
+    position: absolute;
+    top: 21px;
+    right: 20px;
+}
+
+/* logo-header at 1200px */
+@media (max-width: 1200px) {
+    .logo-header {
+        display: none !important;
+    }
+}
+
+.logo-mobile {
+    display: none !important;
+}
+
+/* logo-header at 1200px */
+@media (max-width: 1200px) {
+    .logo-mobile {
+        display: block !important;
+        height: 150px;
+        margin-bottom: 6rem;
+    }
+}
+
 /* techno Menu Css*/
 .techno_menu {
     text-align: right;
@@ -192,7 +234,7 @@ a.seo-button:hover {
     -o-transition: .5s;
     transition: .5s;
     position: relative;
-    color: #232323;
+    color: #fff;
     font-weight: 600;
     text-transform: capitalize;
     margin: 30px 10px;
@@ -729,6 +771,7 @@ a.dtbtn.up:hover {
     top: -272px;
     left: -330px;
     animation: moveLeftBounce 3s linear infinite;
+    -webkit-animation: moveLeftBounce 3s linear infinite;
 }
 
 /*hero thumb End*/
@@ -738,13 +781,14 @@ a.dtbtn.up:hover {
 }
 
 .slider_text_inner h1 {
-    font-size: 65px;
-    text-transform: none;
+    font-size: 50px;
+    text-transform: uppercase;
     font-weight: 800;
     color: #fff;
     margin: 0;
     margin: 0;
     line-height: 1.1;
+    max-width: 70%;
 }
 
 .slider_text_inner h1 span {
@@ -2237,17 +2281,22 @@ a.em-active-button:hover {
 --<	Techno Dark Slider Area Css -->
 ======================================================*/
 .bg-dark {
-    background: #303030 !important;
+    background: #c2c2c2 !important;
 }
 
 .bg-dark2 {
-    background: #27337E;
+    background: #000;
+}
+
+.bg-dark3 {
+    background: #000;
 }
 
 .dark1 {
-    background-image: url(./assets/images/digiscon/identidad.png);
-    background-size: cover;
-    background-position: center center;
+    background-color: #000;
+    background-image: url(./assets/images/digiscon/Texturas/patron.png);
+    background-size: fit;
+    background-position: right bottom;
     background-repeat: no-repeat;
     height: 900px;
 }
@@ -2260,11 +2309,12 @@ a.em-active-button:hover {
 /* media query at 360 */
 @media (max-width: 580px) {
     .dark1 {
-        background-image: url(./assets/images/digiscon/identidad.png);
+        /* background-image: url(./assets/images/digiscon/identidad.png);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        height: 435px;
+        height: 435px; */
+        background-color: #000;
     }
 
     .welcome-title {
@@ -2509,7 +2559,6 @@ a.em-active-button:hover {
 }
 
 .testimonial-area .section_sub_title h5 {
-    ;
     color: #fff;
 }
 
@@ -2719,7 +2768,7 @@ a.em-active-button:hover {
 .em_bar_bg {
     height: 5px;
     width: 90px;
-    background: #cbbded;
+    background: #e3d6af;
     margin: 20px auto;
     position: relative;
     border-radius: 30px;
@@ -2733,7 +2782,7 @@ a.em-active-button:hover {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background: #0C5ADB;
+    background: rgb(246, 152, 54);
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
     -webkit-animation-timing-function: linear;
@@ -3427,7 +3476,11 @@ a.em-active-button:hover {
 }
 
 .top_feature .techno_flipbox .techno_flipbox_back {
-    background: #27337E;
+    background: #000;
+    background-image: url(assets/images/digiscon/Texturas/Textura1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
     border-radius: 8px;
 }
@@ -3437,7 +3490,33 @@ a.em-active-button:hover {
 }
 
 .top_feature .techno_flipbox .techno_flipbox_back::before {
-    display: none;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.techno_flipbox .techno_flipbox_back {
+    background: #000;
+    background-image: url(assets/images/digiscon/Texturas/Textura1.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+    border-radius: 8px;
+}
+
+.techno_flipbox .techno_flipbox_back::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .top_feature .icon {
@@ -4288,7 +4367,7 @@ a.em-active-button:hover {
 --<	Techno Flipbox Area Css -->
 ======================================================*/
 .techno_flipbox_font {
-    border: 1px solid #4059ac;
+    border: 1px solid rgb(246, 152, 54);
     border-radius: 8px;
 }
 
@@ -4326,6 +4405,16 @@ a.em-active-button:hover {
     transform-style: preserve-3d;
     transition: transform .7s ease, -webkit-transform .7s ease;
     position: relative;
+}
+
+.top_feature .techno_flipbox .techno_flipbox_back::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent -80%, #27337E);
 }
 
 .techno_flipbox .techno_flipbox_back::before {
@@ -4376,7 +4465,7 @@ a.em-active-button:hover {
 .techno_flipbox .flipbox_title h3 {
     font-size: 22px;
     padding-bottom: 13px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     -webkit-transition: all 0.7s ease 0s;
     transition: all 0.7s ease 0s;
     color: #fff;
@@ -6861,7 +6950,7 @@ a.team-color3 i {
     height: 100%;
     width: 100%;
     content: "";
-    background: rgba(12, 90, 219, 0.85);
+    background: rgba(39, 51, 126, 0.85);
     opacity: 0;
     transition: .5s;
     border: 3px solid #fff;
@@ -13170,7 +13259,7 @@ ul.accordion.upper {
 }
 
 
-@keyframes "spin" {
+@keyframes spin {
     0% {
         -webkit-transform: rotate(360deg);
         -moz-transform: rotate(360deg);
@@ -13200,7 +13289,7 @@ ul.accordion.upper {
     }
 }
 
-@-webkit-keyframes "spin" {
+@-webkit-keyframes spin {
     0% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -13212,7 +13301,7 @@ ul.accordion.upper {
     }
 }
 
-@-ms-keyframes "spin" {
+@-ms-keyframes spin {
     0% {
         -ms-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -13224,7 +13313,7 @@ ul.accordion.upper {
     }
 }
 
-@-o-keyframes "spin" {
+@-o-keyframes spin {
     0% {
         -o-transform: rotate(360deg);
         transform: rotate(360deg);
@@ -13236,7 +13325,7 @@ ul.accordion.upper {
     }
 }
 
-@keyframes "spin2" {
+@keyframes spin2 {
     0% {
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
@@ -13266,7 +13355,7 @@ ul.accordion.upper {
     }
 }
 
-@-webkit-keyframes "spin2" {
+@-webkit-keyframes spin2 {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -13278,7 +13367,7 @@ ul.accordion.upper {
     }
 }
 
-@-ms-keyframes "spin2" {
+@-ms-keyframes spin2 {
     0% {
         -ms-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -13290,7 +13379,7 @@ ul.accordion.upper {
     }
 }
 
-@-o-keyframes "spin2" {
+@-o-keyframes spin2 {
     0% {
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -13302,7 +13391,7 @@ ul.accordion.upper {
     }
 }
 
-@keyframes "glow" {
+@keyframes glow {
     0% {
         -webkit-box-shadow: none;
         box-shadow: none;
@@ -13334,7 +13423,7 @@ ul.accordion.upper {
 
 }
 
-@-webkit-keyframes "glow" {
+@-webkit-keyframes glow {
     0% {
         -webkit-box-shadow: none;
         box-shadow: none;
@@ -13352,7 +13441,7 @@ ul.accordion.upper {
 
 }
 
-@-ms-keyframes "glow" {
+@-ms-keyframes glow {
     0% {
         box-shadow: none;
     }
@@ -13367,7 +13456,7 @@ ul.accordion.upper {
 
 }
 
-@-o-keyframes "glow" {
+@-o-keyframes glow {
     0% {
         box-shadow: none;
     }

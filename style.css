@@ -244,8 +244,8 @@ a.seo-button:hover {
 .logo-head {
     height: 21vw;
     position: relative;
-    top: -5px;
-    left: 58vw;
+    top: -202px;
+    right: 47vw;
 }
 
 @media (max-width: 800px) {
@@ -3388,9 +3388,10 @@ a.em-active-button:hover {
 @media (max-width:900px) {
 
     .style-five .single_about_thumb_inner img {
-        width: inherit;
-        margin-left: -62%;
-        transform: translateX(50%);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 67%;
     }
 }
 
@@ -11955,6 +11956,7 @@ p.seo-text1 {
 
 .footer-social-info {
     font-size: 3vw !important;
+    width: 100vw;
 }
 
 @media (max-width:480px) {

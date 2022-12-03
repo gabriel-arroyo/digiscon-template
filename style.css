@@ -52,8 +52,8 @@ h1 {
 }
 
 .nosotros {
-    height: calc(702px / 1.5) !important;
-    width: calc(540px / 1.5) !important;
+    height: calc(702px / 1.6) !important;
+    width: calc(540px / 1.7) !important;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -215,6 +215,16 @@ a.seo-button:hover {
     /* bottom: 73px; */
     right: 3vw;
     margin-top: 40px;
+}
+
+@media (max-width: 500px) {
+    .logo-footer {
+        position: absolute;
+        /* bottom: 73px; */
+        left: 8px;
+        margin-top: -11px;
+        height: 47px;
+    }
 }
 
 .logo-header {
@@ -865,6 +875,12 @@ a.dtbtn.up:hover {
 .slider_text_inner {
     display: inline-block;
     margin-top: -224px;
+}
+
+@media (max-width:1000px) {
+    .slider_text_inner {
+        margin-top: 2px;
+    }
 }
 
 @media (max-width:800px) {
@@ -2441,7 +2457,7 @@ a.em-active-button:hover {
 /* mediq query mobile */
 @media (max-width: 850px) {
     .dark1 {
-        background-size: 70%;
+        background-size: 31%;
         height: 70vh;
     }
 }
@@ -7270,7 +7286,7 @@ a.team-color3 i {
     border-radius: 10px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 850px) {
     .single_case_study_icon i {
         background: #fff;
         height: 40px;

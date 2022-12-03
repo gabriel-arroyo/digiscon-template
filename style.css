@@ -53,7 +53,7 @@ h1 {
 
 .nosotros {
     height: calc(702px / 1.6) !important;
-    width: calc(540px / 1.7) !important;
+    width: calc(540px / 1.6) !important;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -2426,17 +2426,17 @@ a.em-active-button:hover {
     position: absolute;
     bottom: 0px;
     right: 0;
-    height: 80%;
+    height: 70%;
     transform: scaleX(-1);
     opacity: 1;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 765px) {
     .textura-nosotros {
         position: absolute;
         bottom: 0px;
         right: 0;
-        height: 55%;
+        height: 35%;
         transform: scaleX(-1);
         opacity: 1;
     }
@@ -2447,7 +2447,7 @@ a.em-active-button:hover {
         position: absolute;
         bottom: 0px;
         right: 0;
-        height: 35%;
+        height: 25%;
         transform: scaleX(-1);
         opacity: 1;
     }
@@ -3381,6 +3381,17 @@ a.em-active-button:hover {
 
 .style-five .single_about_thumb_inner img {
     width: inherit;
+    margin-left: -61%;
+    transform: translateX(50%);
+}
+
+@media (max-width:900px) {
+
+    .style-five .single_about_thumb_inner img {
+        width: inherit;
+        margin-left: -62%;
+        transform: translateX(50%);
+    }
 }
 
 /*about right*/
@@ -11940,6 +11951,10 @@ p.seo-text1 {
     font-weight: 500;
     display: inline-block;
     transition: .5s;
+}
+
+.footer-social-info {
+    font-size: 6vw !important;
 }
 
 .footer-social-info p span {

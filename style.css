@@ -77,6 +77,12 @@ h1 {
     background-color: #000;
 }
 
+@media (max-width:500px) {
+    .slider_list {
+        margin-top: 100px;
+    }
+}
+
 .techno_nav_manu {
     border-radius: 10px;
     border: 2px solid white;
@@ -200,12 +206,15 @@ a.seo-button:hover {
 }
 
 /* logo Css*/
-.logo {}
+.logo {
+    right: 2rem;
+}
 
 .logo-footer {
-    position: relative;
-    right: 0;
-    bottom: -66px;
+    position: absolute;
+    /* bottom: 73px; */
+    right: 3vw;
+    margin-top: 40px;
 }
 
 .logo-header {
@@ -216,11 +225,38 @@ a.seo-button:hover {
 }
 
 /* logo-header at 1200px */
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .logo-header {
         display: none !important;
     }
 }
+
+.logo-head {
+    height: 21vw;
+    position: relative;
+    top: -5px;
+    left: 58vw;
+}
+
+@media (max-width: 800px) {
+    .logo-head {
+        height: 23vw;
+        position: relative;
+        top: -77px;
+        left: 61vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .logo-head {
+        height: 32vw;
+        position: relative;
+        top: 11px;
+        left: 50vw;
+    }
+}
+
+
 
 .logo-mobile {
     display: none !important;
@@ -228,12 +264,12 @@ a.seo-button:hover {
 }
 
 /* logo-header at 1200px */
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .logo-mobile {
         display: block !important;
-        position: relative;
-        margin-left: 45%;
-        margin-top: 15px;
+        position: absolute;
+        left: 60vw;
+        top: -180px;
         height: 150px;
         margin-bottom: 6rem;
     }
@@ -243,6 +279,15 @@ a.seo-button:hover {
     position: absolute;
     left: 0;
     top: 7rem;
+}
+
+@media (max-width: 500px) {
+    .triangulo {
+        position: absolute;
+        left: 0;
+        top: 2rem;
+        height: 70px;
+    }
 }
 
 .dark-title {
@@ -463,7 +508,7 @@ a.dtbtn.up:hover {
 }
 
 .techno_nav_manu.sticky .logo_img {
-    display: none;
+    display: block;
 }
 
 .main_sticky {
@@ -819,6 +864,19 @@ a.dtbtn.up:hover {
 
 .slider_text_inner {
     display: inline-block;
+    margin-top: -224px;
+}
+
+@media (max-width:800px) {
+    .slider_text_inner {
+        margin-top: 97px;
+    }
+}
+
+@media (max-width:575px) {
+    .slider_text_inner {
+        margin-top: 0px;
+    }
 }
 
 .slider_text_inner h1 {
@@ -2342,11 +2400,17 @@ a.em-active-button:hover {
     height: 900px;
 }
 
+@media (max-widht: 600px) {
+    .dark1 {
+        height: 300px;
+    }
+}
+
 .textura-nosotros {
     position: absolute;
     bottom: 0px;
     right: 0;
-    height: 100%;
+    height: 80%;
     transform: scaleX(-1);
     opacity: 1;
 }
@@ -2375,9 +2439,25 @@ a.em-active-button:hover {
 
 
 /* mediq query mobile */
+@media (max-width: 850px) {
+    .dark1 {
+        background-size: 70%;
+        height: 70vh;
+    }
+}
+
+/* mediq query mobile */
 @media (max-width: 580px) {
     .dark1 {
         background-size: 70%;
+        height: 76vh;
+    }
+}
+
+@media (max-width: 450px) {
+    .dark1 {
+        background-size: 70%;
+        height: 94vh;
     }
 }
 
@@ -2458,9 +2538,9 @@ a.em-active-button:hover {
         margin-bottom: 0 !important;
     }
 
-    .meanmenu-reveal {
+    /* .meanmenu-reveal {
         display: none !important;
-    }
+    } */
 
     .contactus-button {
         margin-top: 25px;
@@ -14122,5 +14202,22 @@ div#particles .slider18 {
 
     100% {
         opacity: 1;
+    }
+}
+
+#logo-mobile {
+    display: none;
+}
+
+@media (max-width:1000px) {
+
+    #logo-mobile {
+        position: fixed !important;
+        display: block;
+        top: 7px;
+        left: 13px;
+        height: 50px;
+        margin: 0 !important;
+        z-index: 10000 !important;
     }
 }

@@ -66,6 +66,8 @@
 	<!--==================================================-->
 	<!----- Start Techno Main Menu Area ----->
 	<!--==================================================-->
+	<img src="./assets/images/digiscon/Logotipos Digiscon/SVG/Digiscon_Icono_blanco.svg" height="65px"
+		style="margin-top: -15px;" alt="" id="logo-mobile" />
 	<div id="sticky-header" class="techno_nav_manu d-md-none d-lg-block d-sm-none d-none">
 		<div class="container">
 			<div class="row">
@@ -75,10 +77,7 @@
 							<img src="./assets/images/digiscon/Logotipos Digiscon/SVG/Digiscon_Icono_blanco.svg" height="65px"
 								style="margin-top: -15px;" alt="" />
 						</a>
-						<a class="main_sticky mb-10" href="index.html" title="techno">
-							<img src="./assets/images/digiscon/Logotipos Digiscon/SVG/Digiscon_Icono_blanco.svg" height="60px"
-								style="margin-top: -15px;" alt="astute" />
-						</a>
+
 					</div>
 				</div>
 				<div class="col-md-9">
@@ -145,18 +144,18 @@
 								<div class="slider_text">
 									<div class="slider_text_inner">
 										<img src="./assets/images/digiscon/Logotipos Digiscon/PNG/Logo vertical combinado.png"
-											alt="logo-mobile" class="logo-mobile">
+											alt="logo-mobile" class="logo-head">
 										<h5>Bienvenido</h5>
 										<h1>Estamos para ayudarte
 										</h1>
-										<h1>a impular tus negocios.</h1>
+										<h1>a impulsar tus negocios.</h1>
 										<h1>"Hagámoslo juntos"</h1>
 									</div>
 									<div class="slider_button pt-xs-4 pt-sm-1 pt-md-1 pt-lg-5  d-flex">
 									</div>
 								</div>
-								<img src="./assets/images/digiscon/Logotipos Digiscon/PNG/Logo vertical combinado.png" alt="logo"
-									class="logo-header">
+								<!--<img src="./assets/images/digiscon/Logotipos Digiscon/PNG/Logo vertical combinado.png" alt="logo"
+									class="logo-header">-->
 							</div>
 						</div>
 					</div>
@@ -164,7 +163,7 @@
 
 				<div class="row servicios d-flex justify-content-between">
 					<div class=" servicio">DESARROLLO WEB</div>
-					<div class=" servicio">MARKETING E E-COMMERCE</div>
+					<div class=" servicio">MARKETING & E-COMMERCE</div>
 					<div class=" servicio">BRANDING</div>
 					<div class=" servicio">REDES SOCIALES</div>
 
@@ -699,7 +698,8 @@
 
 				<div class="col-xl-12">
 					<div class="quote_wrapper">
-						<form id="contact_form" action="https://formspree.io/f/xpzngkel" method="POST" id="dreamit-form">
+						<form id="contact_form" action="https://formspree.io/f/xpzngkel" method="POST"
+							onsubmit="this.submit(); this.reset(); return false;" id="dreamit-form">
 							<div class="row">
 								<div class="col-lg-12">
 									<div class="form_box mb-30">
@@ -722,7 +722,7 @@
 											placeholder="Escribe un mensaje"></textarea>
 									</div>
 									<div class="quote_btn text_center">
-										<button class="btn" type="submit">Enviar</button>
+										<button class="btn" type="submit" onclick="clear()">Enviar</button>
 									</div>
 								</div>
 							</div>
@@ -765,7 +765,7 @@
 					<div class="widget widgets-company-info">
 						<div class="footer-bottom-logo pb-65">
 							<img src="./assets/images/digiscon/Logotipos Digiscon/PNG/Logotipo Principal_blanco.png" height="60px"
-								alt="logo" />
+								class="logo-footer" alt="logo" />
 						</div>
 
 

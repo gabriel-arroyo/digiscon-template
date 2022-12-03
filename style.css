@@ -224,12 +224,16 @@ a.seo-button:hover {
 
 .logo-mobile {
     display: none !important;
+
 }
 
 /* logo-header at 1200px */
 @media (max-width: 1200px) {
     .logo-mobile {
         display: block !important;
+        position: relative;
+        margin-left: 45%;
+        margin-top: 15px;
         height: 150px;
         margin-bottom: 6rem;
     }
@@ -2338,6 +2342,13 @@ a.em-active-button:hover {
     height: 900px;
 }
 
+/* mediq query mobile */
+@media (max-width: 580px) {
+    .dark1 {
+        background-size: 70%;
+    }
+}
+
 .patron-header {
     position: absolute;
     right: 0;
@@ -2364,6 +2375,30 @@ a.em-active-button:hover {
     bottom: -112px;
 }
 
+.servicios {
+    margin-top: 50px;
+    padding: 15px 10px;
+    background-color: rgba(39, 51, 126, .5);
+    color: white;
+
+}
+
+.servicio {
+    font-weight: bold !important;
+    font-family: 'Tahoma', sans-serif;
+}
+
+@media (max-width: 580px) {
+    .servicio {
+        text-align: center;
+    }
+
+    .servicios {
+        flex-direction: column !important;
+        background-color: rgba(39, 51, 126, .5);
+    }
+
+}
 
 .welcome-text {
     width: 60%;

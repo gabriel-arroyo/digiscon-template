@@ -726,6 +726,14 @@
 								</div>
 							</div>
 						</form>
+						<div class="alert alert-danger mt-4" id="success-alert-error">
+							<button type="button" class="close" data-dismiss="alert">x</button>
+							<strong>Error. </strong> Por favor rellena todos los campos.
+						</div>
+						<div class="alert alert-warning mt-4" id="success-alert">
+							<button type="button" class="close" data-dismiss="alert">x</button>
+							<strong>¡Gracias por contactarnos! </strong> Nos pondremos en contacto contigo lo antes posible.
+						</div>
 						<div id="status"></div>
 					</div>
 				</div>
@@ -797,7 +805,10 @@
 			const form = new FormData(this)
 			console.log(form)
 			if (form.get('name') == '' || form.get('email') == '' || form.get('phone') == '' || form.get('message') == '') {
-				alert('Por favor, llena todos los campos')
+				$("#success-alert-error").fadeTo(3000, 500).slideUp(500, function () {
+					$("#success-alert-error").slideUp(500);
+				});
+
 			} else {
 				fetch(event.target.action, {
 					method: $form.method,
@@ -807,13 +818,17 @@
 					}
 				}).then(response => {
 					$form.reset()
-					alert('Gracias por contactarnos, nos pondremos en contacto contigo lo más pronto posible')
+					$("#success-alert").fadeTo(3000, 500).slideUp(500, function () {
+						$("#success-alert").slideUp(500);
+					});
 				}).catch(error => {
 					alert('Error')
 				})
 			}
 
 		}
+
+
 	</script>
 	<script type="text/javascript" src="assets/js/vendor/jquery-3.2.1.min.js"></script>
 	<!-- bootstrap js -->
